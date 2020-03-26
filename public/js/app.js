@@ -53362,7 +53362,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _Main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Main */ "./resources/js/components/Main.js");
 /* harmony import */ var _sidebar_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sidebar.jsx */ "./resources/js/components/sidebar.jsx");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _Hero_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Hero.jsx */ "./resources/js/components/Hero.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53387,6 +53388,7 @@ function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || func
 
 
 
+
 var Example = /*#__PURE__*/function (_Component) {
   _inherits(Example, _Component);
 
@@ -53401,7 +53403,7 @@ var Example = /*#__PURE__*/function (_Component) {
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "container"
-      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Main__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+      }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_sidebar_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], null));
     }
   }]);
 
@@ -53411,8 +53413,42 @@ var Example = /*#__PURE__*/function (_Component) {
 
 
 if (document.getElementById('root')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Example, null)), document.getElementById('root'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_5__["BrowserRouter"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Example, null)), document.getElementById('root'));
 }
+
+/***/ }),
+
+/***/ "./resources/js/components/Hero.jsx":
+/*!******************************************!*\
+  !*** ./resources/js/components/Hero.jsx ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _sidebar_style_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./sidebar.style.scss */ "./resources/js/components/sidebar.style.scss");
+/* harmony import */ var _sidebar_style_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_sidebar_style_scss__WEBPACK_IMPORTED_MODULE_2__);
+
+ // import Directory from '../../components/directory/directory.component';
+
+
+
+var Hero = function Hero() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "welcome-jumbo"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "status"
+  }, "NEW"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Billy Burger"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "../img/hamburger-and-fries-png-4.png",
+    className: "burger-fries"
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Hero);
 
 /***/ }),
 
@@ -53668,10 +53704,10 @@ var Product = function Product(_ref) {
 
 /***/ }),
 
-/***/ "./resources/js/components/sidebar.jsx":
-/*!*********************************************!*\
-  !*** ./resources/js/components/sidebar.jsx ***!
-  \*********************************************/
+/***/ "./resources/js/components/hero.jsx":
+/*!******************************************!*\
+  !*** ./resources/js/components/hero.jsx ***!
+  \******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -53687,8 +53723,55 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var Hero = function Hero() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "welcome-jumbo"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "status"
+  }, "NEW"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Billy Burger"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    src: "../img/hamburger-and-fries-png-4.png",
+    className: "burger-fries"
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Hero);
+
+/***/ }),
+
+/***/ "./resources/js/components/sidebar.jsx":
+/*!*********************************************!*\
+  !*** ./resources/js/components/sidebar.jsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/esm/react-router-dom.js");
+/* harmony import */ var _hero_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hero.jsx */ "./resources/js/components/hero.jsx");
+/* harmony import */ var _pages_about_about_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../pages/about/about.jsx */ "./resources/js/pages/about/about.jsx");
+/* harmony import */ var _pages_contact_contact_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../pages/contact/contact.jsx */ "./resources/js/pages/contact/contact.jsx");
+/* harmony import */ var _pages_offers_offers_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../pages/offers/offers.jsx */ "./resources/js/pages/offers/offers.jsx");
+/* harmony import */ var _pages_Waitlist_waitlist_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../pages/Waitlist/waitlist.jsx */ "./resources/js/pages/Waitlist/waitlist.jsx");
+/* harmony import */ var _pages_giftcards_giftcards_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../pages/giftcards/giftcards.jsx */ "./resources/js/pages/giftcards/giftcards.jsx");
+/* harmony import */ var _sidebar_style_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./sidebar.style.scss */ "./resources/js/components/sidebar.style.scss");
+/* harmony import */ var _sidebar_style_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_sidebar_style_scss__WEBPACK_IMPORTED_MODULE_8__);
+
+
+
+
+
+
+
+ //bailing on this section for now but will work the same
+// import Directory from '../../components/directory/directory.component';
+
+
+
 var Sidebar = function Sidebar() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", {
     id: "welcome"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "welcome-menu"
@@ -53705,16 +53788,14 @@ var Sidebar = function Sidebar() {
   }, "Menu"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "links"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/about"
-  }, "about "), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "/about"
+    to: "/menu"
   }, "Menu")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/about"
+  }, "About")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/waitlist"
-  }, "waitlist ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+  }, "Waitlist ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/offers"
-  }, "offers ")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/giftcards"
-  }, "giftcards ")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Offers ")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "social-icons"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "#"
@@ -53742,14 +53823,27 @@ var Sidebar = function Sidebar() {
     className: "phone-number"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "tel:7182198652"
-  }, "718-219-8652")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "welcome-jumbo"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "status"
-  }, "NEW"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Billy Burger"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-    src: "../img/hamburger-and-fries-png-4.png",
-    className: "burger-fries"
-  }))));
+  }, "718-219-8652")))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/",
+    component: _hero_jsx__WEBPACK_IMPORTED_MODULE_2__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/about",
+    component: _pages_about_about_jsx__WEBPACK_IMPORTED_MODULE_3__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/offers",
+    component: _pages_offers_offers_jsx__WEBPACK_IMPORTED_MODULE_5__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/waitlist",
+    component: _pages_Waitlist_waitlist_jsx__WEBPACK_IMPORTED_MODULE_6__["default"]
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Route"], {
+    exact: true,
+    path: "/contact",
+    component: _pages_contact_contact_jsx__WEBPACK_IMPORTED_MODULE_4__["default"]
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Sidebar);
@@ -53955,22 +54049,9 @@ var Contact = function Contact() {
   !*** ./resources/js/pages/giftcards/giftcards.jsx ***!
   \****************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
- // import Directory from '../../components/directory/directory.component';
-// import './Giftcards.scss';
-
-var Giftcards = function Giftcards() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "homepage"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Giftcards page my bro!"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Giftcards);
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open 'D:\\Dev-Work\\laravel-react\\restaurant\\lara-react\\resources\\js\\pages\\giftcards\\giftcards.jsx'");
 
 /***/ }),
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Main from './Main';
 import Sidebar from './sidebar.jsx';
+import Hero from './Hero.jsx';
 import {BrowserRouter} from 'react-router-dom';
 
 
@@ -22,7 +23,8 @@ export default class Example extends Component {
                     </div>
                 </div> */}
                 <Sidebar/>
-                <Main/>
+                {/* <Hero/>  would be nice to seperate this from side bar so can do routing */}
+                {/* <Main/> */}
             </div>
         );
     }

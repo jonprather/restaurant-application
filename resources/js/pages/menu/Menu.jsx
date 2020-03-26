@@ -2,12 +2,12 @@ import React from 'react';
 
 // import Directory from '../../components/directory/directory.component';
 
-// import './Giftcards.scss';
-
-const Giftcards = () => (
+// import './Menucards.scss';
+  
+const Menucards = () => (
   <div className='homepage'>
     {/* <Directory /> */}
-    <p>Giftcards page my bro!</p>
+    <p>Menucards page my bro!</p>
   </div>
 );
-export default Giftcards;
+export default Menucards;

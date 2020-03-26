@@ -1,15 +1,20 @@
 import React from 'react';
 import { Switch, Route, Link } from 'react-router-dom';
-
+import Hero from './hero.jsx';
+import About from '../pages/about/about.jsx'
+import Contact from '../pages/contact/contact.jsx'
+import Offers from '../pages/offers/offers.jsx'
+import Waitlist from '../pages/Waitlist/waitlist.jsx'
+import Giftcards from '../pages/giftcards/giftcards.jsx'; //bailing on this section for now but will work the same
 
 // import Directory from '../../components/directory/directory.component';
 
 import './sidebar.style.scss';
 
 const Sidebar = () => (
-    <div>
+    
     <section id="welcome">
-    {/* ok to do sepertae the menue from another part into intos own component or is this overkill .. 3-25-20 
+    {/* ok to do sepertae the menu from another part into intos own component or is this overkill .. 3-25-20 
     still just doing basic route orginaziton on front end via react router FE layout still buggy
     */}
     <div className="welcome-menu">
@@ -22,19 +27,20 @@ const Sidebar = () => (
           Menu
         </div>
         <ul className="links">
-          <li>
-              <Link to= '/about'>about </Link>
-            <a href="/about">Menu</a>
+        <li>
+              <Link to= '/menu'>Menu</Link>
           </li>
           <li>
-          <Link to= '/waitlist'>waitlist </Link>
+              <Link to= '/about'>About</Link>
+            
           </li>
           <li>
-          <Link to= '/offers'>offers </Link>
+          <Link to= '/waitlist'>Waitlist </Link>
           </li>
           <li>
-          <Link to= '/giftcards'>giftcards </Link>
+          <Link to= '/offers'>Offers </Link>
           </li>
+         
         </ul>
       </div>
       <div className="social-icons">
@@ -61,14 +67,17 @@ const Sidebar = () => (
       </div>
     </div>
     {/* this shit isnt sidebar should be something else i think */}
-    <div className="welcome-jumbo">
-      <div className="status">NEW</div>
-      <h1>Billy Burger</h1>
-      <img src="../img/hamburger-and-fries-png-4.png" className="burger-fries"/>
-      {/* img is relative to app.js not the component */}
-    </div>
+    <Switch>
+        <Route exact path='/' component= {Hero} />
+        <Route exact path='/about' component= {About} />
+          <Route exact path='/offers' component= {Offers} />
+        
+          <Route exact path='/waitlist' component= {Waitlist} />
+          <Route exact path='/contact' component= {Contact} />
+     </Switch>
+
   </section>
-  </div>
+  
 );
 
 export default Sidebar;
