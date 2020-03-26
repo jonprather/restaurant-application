@@ -1,12 +1,17 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Main from './Main';
+import Sidebar from './sidebar.jsx';
+import {BrowserRouter} from 'react-router-dom';
+
+
+
 
 export default class Example extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row justify-content-center">
+                {/* <div className="row justify-content-center">
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-header">Example Component</div>
@@ -15,7 +20,8 @@ export default class Example extends Component {
                            
                         </div>
                     </div>
-                </div>
+                </div> */}
+                <Sidebar/>
                 <Main/>
             </div>
         );
@@ -23,5 +29,7 @@ export default class Example extends Component {
 }
 
 if (document.getElementById('root')) {
-    ReactDOM.render(<Example />, document.getElementById('root'));
+    ReactDOM.render(<BrowserRouter>
+        <Example />
+    </BrowserRouter>, document.getElementById('root'));
 }

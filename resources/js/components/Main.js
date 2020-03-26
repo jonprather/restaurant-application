@@ -3,6 +3,15 @@ import ReactDOM from 'react-dom';
 import Product from './Product';
 import AddProduct from './AddProduct';  
 import axios from "axios";
+import { Switch, Route } from 'react-router-dom';
+import test from './test'
+import About from '../pages/about/about.jsx'
+import Contact from '../pages/contact/contact.jsx'
+import Offers from '../pages/offers/offers.jsx'
+import Waitlist from '../pages/Waitlist/waitlist.jsx'
+import Giftcards from '../pages/giftcards/giftcards.jsx'
+//i like the jsx for code completition but must specify it here otherwise will look for .js 
+
  
 /* Main Component */
 export default class Main extends Component {
@@ -87,30 +96,33 @@ let url ='api/products'
   render() {
    /* Some css code has been removed for brevity */ 
 
-
-
-
-
-
-
-
-
-
-
-    
     return (
         <div>
-            <h1>Products </h1>
+          
               <ul>
-                { this.renderProducts() }
+                {/* { this.renderProducts() } */}
               </ul> 
               <div>
-              <Product product={this.state.currentProduct} />
+              {/* <Product product={this.state.currentProduct} /> */}
               </div>
               <div>
                   
-              <AddProduct onAdd={this.handleAddProduct} />
+              {/* <AddProduct onAdd={this.handleAddProduct} /> */}
               </div>
+              {/* <Switch> */}
+          {/* <Route exact path='/' component={HomePage} /> */}
+          <Switch>
+          
+          {/* <Route exact path='/shop' component= {test} /> */}
+          <Route exact path='/about' component= {About} />
+          <Route exact path='/offers' component= {Offers} />
+          <Route exact path='/giftcards' component= {Giftcards} />
+          <Route exact path='/waitlist' component= {Waitlist} />
+          <Route exact path='/contact' component= {Contact} />
+
+          </Switch>
+          {/* <Route exact path='/signin' component={SignInAndSignUpPage} /> */}
+        {/* </Switch> */}
             </div> 
        
     );

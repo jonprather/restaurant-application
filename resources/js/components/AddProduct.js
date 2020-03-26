@@ -12,6 +12,7 @@ class AddProduct extends Component {
                 availability: 0
             }
           }
+          
        
       //Boilerplate code for binding methods with `this`
       this.handleSubmit = this.handleSubmit.bind(this);
