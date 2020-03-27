@@ -41,6 +41,7 @@
   },
   "homepage": "https://github.com/jonprather/restaurant-application#readme",
   "dependencies": {
+    "jshint": "^2.11.0",
     "react-router-dom": "^5.1.2"
   }
 }

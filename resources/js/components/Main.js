@@ -5,11 +5,11 @@ import AddProduct from './AddProduct';
 import axios from "axios";
 import { Switch, Route } from 'react-router-dom';
 import test from './test'
-import About from '../pages/about/about.jsx'
-import Contact from '../pages/contact/contact.jsx'
-import Offers from '../pages/offers/offers.jsx'
-import Waitlist from '../pages/Waitlist/waitlist.jsx'
-import Giftcards from '../pages/giftcards/giftcards.jsx'
+// import About from '../pages/about/about.jsx'
+// import Contact from '../pages/contact/contact.jsx'
+// import Offers from '../pages/offers/offers.jsx'
+// import Waitlist from '../pages/Waitlist/waitlist.jsx'
+// import Menu from '../pages/Menu/Menu.jsx'
 //i like the jsx for code completition but must specify it here otherwise will look for .js 
 
  
@@ -114,11 +114,11 @@ let url ='api/products'
           <Switch>
           
           {/* <Route exact path='/shop' component= {test} /> */}
-          <Route exact path='/about' component= {About} />
+          {/* <Route exact path='/about' component= {About} />
           <Route exact path='/offers' component= {Offers} />
           <Route exact path='/giftcards' component= {Giftcards} />
           <Route exact path='/waitlist' component= {Waitlist} />
-          <Route exact path='/contact' component= {Contact} />
+          <Route exact path='/contact' component= {Contact} /> */}
 
           </Switch>
           {/* <Route exact path='/signin' component={SignInAndSignUpPage} /> */}
